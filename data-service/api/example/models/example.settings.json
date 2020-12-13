@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "example_lists",
+  "collectionName": "examples",
   "info": {
-    "name": "example-list"
+    "name": "Example"
   },
   "options": {
     "increments": true,
@@ -13,10 +13,10 @@
     "name": {
       "type": "string"
     },
-    "description": {
-      "type": "string"
+    "desc": {
+      "type": "text"
     },
-    "richtext": {
+    "richdesc": {
       "type": "richtext"
     }
   }
