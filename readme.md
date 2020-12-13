@@ -7,6 +7,10 @@ React, Remix, Storybook, Strapi
 
     our source of truth, control data/content here, use this to modify and push changes to CDNs
 
+  - `front-face`
+  
+    Remix
+
   - `ui-components`
   
     our react component library
