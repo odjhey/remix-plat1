@@ -1,7 +1,6 @@
 import type { Loader } from "@remix-run/data"
 let loader: Loader = () => {
-    console.log(process.env.DATA_HOST)
-    return fetch("http://localhost:1337/example-lists")
+    return fetch("http://codee.cafe:1337/examples")
 }
 
 export { loader }

@@ -12,7 +12,13 @@ export default function Strapi() {
     console.log(data)
     return (
         <div>
-            <h2>From Strapi</h2>
+            <h2>Strapi</h2>
+            <div>{data.map((d: any) => {
+                return <div key={d.id}>
+                    <div>{d.name} - {d.desc}</div>
+                    <pre>{JSON.stringify(d)}</pre>
+                </div>
+            })}</div>
         </div>
     );
 }

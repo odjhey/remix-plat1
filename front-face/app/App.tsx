@@ -1,5 +1,5 @@
 import { Meta, Scripts, Styles, Routes, useGlobalData } from "@remix-run/react";
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 export default function App() {
   let data = useGlobalData();
@@ -14,8 +14,9 @@ export default function App() {
       <body>
         <Routes />
         <Scripts />
-        <Link to="/strapi">See Strapi</Link>
         <footer>
+          <Link to="/strapi">strapi</Link> {` `}
+          <Link to="/">home</Link>
           <p>This page was rendered at {data.date.toLocaleString()}</p>
         </footer>
       </body>
